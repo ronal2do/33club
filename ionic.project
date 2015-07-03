@@ -1,0 +1,13 @@
+{
+  "name": "club33app",
+  "app_id": "534c6ac0",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
