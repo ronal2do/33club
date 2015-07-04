@@ -127,7 +127,7 @@ angular.module('your_app_name.controllers', [])
       // { text: '<b>Share</b> This' },
       // { text: 'Move' }
       // ],
-      destructiveText: 'Logout',
+      destructiveText: 'Sair',
       titleText: 'Você tem certeza que quer sair? Este app é fantástico , então eu recomendo que você fique.',
       cancelText: 'Cancelar',
       cancel: function() {
@@ -173,8 +173,8 @@ angular.module('your_app_name.controllers', [])
         cordova.plugins.email.open({
           to:      'listas@33club.com.br',
           cc:      '',
-          subject: 'Lista {{post.name}}',
-          body:    'Eu quero ir!, em seguida a sua lista'
+          subject: 'Lista',
+          body:    'Escreva o nome da festa ou data, em seguida a sua lista'
         });
       }
     );
@@ -444,7 +444,7 @@ angular.module('your_app_name.controllers', [])
 // POST
 .controller('PostCtrl', function($scope, $state, $ionicLoading, PostService, $stateParams, AuthService, $ionicScrollDelegate) {
   $ionicLoading.show({
-    template: 'Carregando Eventos...'
+    template: 'Carregando detalhes da festa...'
   });
 
   var postId = $stateParams.postId;
@@ -466,7 +466,7 @@ angular.module('your_app_name.controllers', [])
   });
 
   $scope.sharePost = function(link){
-    window.plugins.socialsharing.share('Eu vou para essa FESTA!: ', null, null, link);
+    window.plugins.socialsharing.share('Vamos para essa festa?: ', null, null, link);
   };
 
   $scope.addComment = function(){

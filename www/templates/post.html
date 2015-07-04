@@ -12,7 +12,7 @@
     </div>
     <div class="card-footer">
       <a class="button button-outline button-block featured" ng-click="sharePost(post.custom_fields.fb_event_uri[0])">COMPARTILHAR</a>
-        <a class="button button-outline button-block featured " ng-controller="EmailSenderCtrl" ng-click="sendLista()">
+        <a class="button button-outline button-block featured " ng-controller="EmailSenderCtrl" ng-click="sendLista(post.title)">
           LISTAS
         </a>
       

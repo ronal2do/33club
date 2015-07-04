@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.startapplabs.ionWordpress" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.app33312093" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>33 Club</name>
   <description>
-    An Ionic and Cordova project based on WordPress.
-  </description>
-  <author email="ronal2do@gmail.com" href="http://dlima.art.br/">
-    dlima
-  </author>
+        An Ionic Framework and Cordova project.
+    </description>
+  <author email="me@dlima.art.br" href="http://dlima.art.br/">
+      Ronaldo Lima
+    </author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://www.dlima.art.br/lab/api"/>

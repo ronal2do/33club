@@ -1,6 +1,6 @@
 {
   "name": "club33app",
-  "app_id": "534c6ac0",
+  "app_id": "05c6f28d",
   "gulpStartupTasks": [
     "sass",
     "templatecache",

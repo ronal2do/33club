@@ -74,15 +74,15 @@ cordova build --release android
 ```
 #### 2)
 ```
-keytool -genkey -v -keystore ionwordpress-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+keytool -genkey -v -keystore 33app-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 ```
 #### 3)
 ```
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ionwordpress-key.keystore "$HOME"/ionwordpress/platforms/android/ant-build/CordovaApp-release-unsigned.apk alias_name
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore 33app-key.keystore "$HOME"/Desktop/33app/platforms/android/ant-build/CordovaApp-release-unsigned.apk alias_name
 ```
 #### 4)
 ```
-zipalign -v 4 "$HOME"/ionwordpress/platforms/android/ant-build/CordovaApp-release-unsigned.apk ionwordpress.apk
+zipalign -v 4 "$HOME"/Desktop/33app/platforms/android/ant-build/CordovaApp-release-unsigned.apk 33app.apk
 ```
 
 

@@ -10,7 +10,7 @@
     </p>
 </div>
 <div class="card-footer">
-    <a class="card-button secondary" ng-click="sharePost(post.url)">COMPARTILHAR</a>
+    <a class="card-button secondary" ng-click="sharePost(post.custom_fields.fb_event_uri[0])">COMPARTILHAR</a>
     <a class="card-button primary" ui-sref="app.post({postId :post.id})">VER </a>
     <a ng-show="post.comment_count > 0" class="card-button comments" ui-sref="app.post({postId :post.id})">
     <i class="icon ion-chatbox"></i>{{post.comment_count}}
